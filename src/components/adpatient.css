@@ -1,0 +1,103 @@
+
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9); /* soft blue-green */
+  min-height: 100vh;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255,255,255,0.8); /* white overlay */
+  z-index: -1;
+}
+
+
+h2 {
+  color: #007bff;
+  text-align: center;
+}
+
+.patient-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.patient-form input,
+.patient-form select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.patient-form button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section-column {
+  margin-top: 30px;
+}
+
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-discharge {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.bill-section {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.bill-form .form-group {
+  margin-bottom: 15px;
+}
+
+.bill-form .form-group label {
+  font-weight: bold;
+}
+
+.bill-form .form-group p {
+  margin: 5px 0;
+}
+
+.btn-print {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-print:hover {
+  background-color: #45a049;
+}

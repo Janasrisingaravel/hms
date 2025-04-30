@@ -1,0 +1,86 @@
+/* Common Page Styles */
+.page {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background-color: #d3d3d3;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.page h1 {
+  font-size: 42px;
+  margin-bottom: 30px;
+  color: #2c3e50;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 10px;
+}
+
+/* Paragraphs */
+.page p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* FAQ Specific Styles */
+.faq-page {
+  background-color: #d3d3d3;
+}
+
+.faq-page h3 {
+  font-size: 22px;
+  color: #007bff;
+  margin-top: 25px;
+  font-weight: 600;
+}
+
+.faq-page p {
+  margin-left: 15px;
+  border-left: 3px solid #007bff;
+  padding-left: 10px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #2c3e50;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer-item {
+  text-decoration: none;
+  color:#d3d3d3;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.footer-item:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+.faq-page {
+  background-color: #d3d3d3;
+}
+
+.faq-page h3 {
+  font-size: 22px;
+  color: #0056b3;
+  margin-top: 28px;
+  font-weight: 600;
+}
+
+.faq-page p {
+  margin-left: 20px;
+  border-left: 4px solid #007bff;
+  padding-left: 12px;
+  background: #ffff;
+  border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}

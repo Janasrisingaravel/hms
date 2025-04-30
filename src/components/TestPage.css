@@ -1,0 +1,29 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+  
+  .hamburger-btn {
+    font-size: 28px;
+    background: none;
+    border: 2px solid red; /* Debug: red border */
+    color: white;
+    cursor: pointer;
+    margin-right: 16px;
+    z-index: 2000;
+  }
+  
+  .dash-title {
+    color: white;
+    font-size: 22px;
+    margin: 0;
+  }
+  

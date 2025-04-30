@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .department-wrapper {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 28px;
+  }
+  
+  .department-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .input-field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  
+  .input-field label {
+    font-weight: bold;
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 150px;
+  }
+  
+  .department-input label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-bottom: 0;
+    margin-right: 5px;
+    margin-left: 60px;
+  }
+  
+  .department-input input {
+    width: 300px;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    color: #555;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  .department-input button {
+    width: 300px;
+    height: 40px;
+    background: linear-gradient(45deg, #0077b6, #0096c7);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .department-input button:hover {
+    background: linear-gradient(45deg, #023e8a, #0353a4);
+  }
+  
+  .department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .department-card {
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .department-card:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .department-card-header {
+    background-color: #0077b6;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .department-card-body {
+    margin-bottom: 15px;
+  }
+  
+  .department-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .department-card-footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .department-card button {
+    padding: 8px 16px;
+    background-color: #ef5350;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .department-card button:hover {
+    background-color: #c62828;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 600px) {
+    .department-input input,
+    .department-input button {
+      width: 90%;
+    }
+  
+    .department-input label {
+      width: auto;
+      text-align: left;
+      margin-left: 20px;
+    }
+  }
+  

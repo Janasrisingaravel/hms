@@ -1,0 +1,286 @@
+/* src/pages/MyProfile.css */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.profile-card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+.profile-banner {
+  width: 100%;
+  height: 150px;
+  background-image: url("https://thumbs.dreamstime.com/b/healthcare-medical-concept-medicine-doctor-stethoscope-hand-patients-come-to-hospital-background-179931139.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+.profile-banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3); /* Dark transparent overlay */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #4CAF50;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-picture:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-header-info h3 {
+  font-size: 30px;
+  color: #333;
+  margin: 0;
+}
+
+.profile-header-info p {
+  font-size: 18px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.profile-body {
+  width: 100%;
+}
+
+.profile-body h4 {
+  font-size: 22px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.profile-body p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.profile-body .contact-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.contact-info svg {
+  vertical-align: middle;
+  margin-right: 5px;
+  color: #4CAF50;
+}
+
+.profile-body .contact-info strong {
+  color: #333;
+  font-weight: bold;
+}
+
+.profile-divider {
+  margin: 20px 0;
+  border-bottom: 2px solid #f0f0f0;
+  width: 80%;
+  opacity: 0.5;
+}
+
+.profile-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.footer-button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #45a049;
+}
+
+.footer-button:active {
+  background-color: #388e3c;
+}
+.small-button {
+  width: 100px;       /* smaller width */
+  padding: 8px 0;     /* vertical padding only */
+  font-size: 14px;
+  border-radius: 4px;
+}
+.profile-footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Aligns buttons to the right */
+  margin-top: 40px;
+}
+
+.footer-button {
+  padding: 12px 24px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 10px; /* Space between buttons */
+}
+
+.footer-button:hover {
+  background-color: #45a049;
+}
+
+.footer-button:active {
+  background-color: #388e3c;
+}
+
+.small-button {
+  width: 100px;       /* smaller width */
+  padding: 8px 0;     /* vertical padding only */
+  font-size: 14px;
+  border-radius: 4px;
+}
+.edit-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.edit-modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+}
+
+.edit-modal-content h3 {
+  margin-top: 0;
+}
+
+.edit-modal-content input,
+.edit-modal-content textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  width:40%;
+  padding: 8px 15px;
+  border: none;
+  background: #45a049;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-buttons button:last-child {
+  background: #45a049;
+}
+.medical-history-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+}
+
+.patient-list {
+  flex: 1;
+  border-right: 1px solid #ccc;
+}
+
+.patient-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.patient-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.patient-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.patient-details {
+  flex: 2;
+}

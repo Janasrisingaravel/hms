@@ -1,0 +1,167 @@
+/* doctorpage.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #2f4050;
+  padding: 10px 20px;
+  color: #fff;
+  height: 60px;
+}
+
+.hamburger-btn {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.dash-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 240px;
+  height: calc(100% - 60px);
+  background-color: #2f4050;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.doctor-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu li {
+  margin: 15px 0;
+}
+
+.sidebar-menu li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #1ab394;
+}
+
+.logout-button {
+  margin-top: 30px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  background-color: #d9534f;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
+
+.dashboard-content {
+  margin-top: 60px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.dashboard-content.with-sidebar {
+  margin-left: 260px;
+}
+
+.dashboard-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.dashboard-left, .dashboard-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.appointments-count {
+  background-color: #f9f9f9;
+}
+
+.doctor-notes {
+  background-color: #fff8dc;
+}
+
+.weekly-snapshot {
+  background-color: #e8f4f8;
+}
+
+.shift-info {
+  background-color: #f0fff0;
+}
+
+.snapshot-info {
+  margin-top: 15px;
+}
+
+.info-item {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 8px;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.calendar-section {
+  flex-basis: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
